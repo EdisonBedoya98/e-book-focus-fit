@@ -23,7 +23,7 @@ export default function Chapters() {
             as="li"
             key={c.number}
             delay={(i % 2) * 80}
-            className="group relative flex gap-6 bg-ink-2 p-8 transition-colors hover:bg-ink-3 md:p-9"
+            className="group relative flex gap-6 bg-ink-2 p-8 hover:bg-ink-3 md:p-9"
           >
             <span className="display shrink-0 text-4xl leading-none text-white/35 transition-colors duration-300 group-hover:text-red md:text-5xl">
               {c.number}

@@ -63,8 +63,8 @@ export const WHATSAPP = ''             // ej: '573001234567' → aparece el bloq
 | Todos los textos de las secciones (dolores, capítulos, ejercicios, FAQ…) | `src/data/content.js` |
 | Foto de Cata | reemplaza `src/assets/cata.png` |
 | Testimonios (opcional) | `src/data/content.js` → `testimonials` |
-| Imagen de las páginas interiores | reemplaza `src/assets/paginas-ebook.png` |
 | Título y descripción en Google / redes | `index.html` |
+| Ejemplo de tabla de ejercicio | `src/components/ui/ExerciseSheet.jsx` |
 | Imagen que se ve al compartir el link | `public/og-image.png` (1200×630) |
 
 **Cambiar el precio:** en `src/config/site.js`
@@ -78,8 +78,9 @@ price: {
 },
 ```
 
-> ⚠️ **Importante:** las fotos de `src/assets/` son provisionales (salieron de la propuesta de diseño).
-> Reemplázalas por tus imágenes reales antes de publicar, manteniendo el mismo nombre de archivo.
+> ⚠️ **Importante:** la foto de `src/assets/cata.png` es provisional (salió de la propuesta de
+> diseño y es de baja resolución). Reemplázala por una foto tuya real antes de publicar,
+> manteniendo el mismo nombre de archivo.
 
 ---
 
@@ -105,7 +106,7 @@ El orden de las secciones sigue la estructura de venta acordada en la propuesta:
 | 14 | Hola, soy Cata | `About.jsx` | Autoridad y conexión humana |
 | 14b | Testimonios (opcional) | `Testimonials.jsx` | Aparece solo si agregas testimonios reales en `content.js` |
 | 15 | Precio | `Pricing.jsx` | Oferta, qué incluye, garantía y CTA principal |
-| 16 | Dudas (opcional) | `Support.jsx` | WhatsApp, si lo configuras |
+| 16 | Dudas antes de comprar | `Support.jsx` | Botón de WhatsApp si configuras el número; si no, correo |
 | 17 | FAQ | `Faq.jsx` | Elimina objeciones, incluye los pasos de compra |
 | 18 | Cierre | `FinalCta.jsx` | Último CTA emocional |
 | 19 | Pie de página | `Footer.jsx` | Aviso legal y contacto |
@@ -134,7 +135,9 @@ npx vercel
 **Opción manual:** ejecuta `npm run build` y sube el contenido de la carpeta `dist/`
 a Netlify, Hostinger, Cloudflare Pages o el hosting que uses.
 
-Recuerda actualizar en `index.html` la línea `<link rel="canonical" ...>` con tu dominio real.
+**Antes de publicar**, cambia `focusandfit.com` por tu dominio real en las tres etiquetas
+marcadas en `index.html` (`canonical`, `og:url` y `og:image`). Si no lo haces, al compartir el
+link en WhatsApp o Instagram no se verá la imagen de portada.
 
 ---
 

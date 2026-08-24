@@ -74,7 +74,7 @@ export default function Hero() {
               <span className="text-xs font-bold uppercase tracking-[0.18em] text-red-bright">
                 {site.price.currencyLabel}
               </span>
-              <span className="text-[11px] font-semibold uppercase tracking-[0.12em] text-white/45">
+              <span className="text-[11px] font-semibold uppercase tracking-[0.12em] text-white/60">
                 · pago único · garantía de {site.guaranteeDays} días
               </span>
             </p>

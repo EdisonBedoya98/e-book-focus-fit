@@ -19,7 +19,7 @@ export default function Identification() {
               as="li"
               key={p.title}
               delay={i * 70}
-              className={`group relative bg-ink-2 p-7 transition-colors hover:bg-ink-3 ${
+              className={`group relative bg-ink-2 p-7 hover:bg-ink-3 ${
                 i === painPoints.length - 1 ? 'sm:col-span-2' : ''
               }`}
             >

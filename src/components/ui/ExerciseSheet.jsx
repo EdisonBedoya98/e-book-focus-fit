@@ -14,11 +14,11 @@ export default function ExerciseSheet({ className = '' }) {
   return (
     <div className={`relative ${className}`}>
       <div className="rotate-[-1.2deg] bg-bone p-6 text-ink shadow-[0_30px_70px_-25px_rgba(0,0,0,0.9)] sm:p-8">
-        <p className="text-[9px] font-bold uppercase tracking-[0.22em] text-red">Ejercicio 06 · Ejemplo</p>
+        <p className="text-[9px] font-bold uppercase tracking-[0.22em] text-red-deep">Ejercicio 06 · Ejemplo</p>
         <h3 className="mt-2 text-lg font-bold leading-tight text-ink sm:text-xl">
           Gratificación instantánea vs. diferida
         </h3>
-        <p className="mt-2 text-[11px] leading-relaxed text-ink/60">
+        <p className="mt-2 text-[11px] leading-relaxed text-ink/70">
           Registra durante la semana al menos 5 situaciones reales de conflicto.
         </p>
 
@@ -54,7 +54,7 @@ export default function ExerciseSheet({ className = '' }) {
           </table>
         </div>
 
-        <p className="mt-5 border-t border-ink/15 pt-4 text-[10px] leading-relaxed text-ink/55">
+        <p className="mt-5 border-t border-ink/15 pt-4 text-[10px] leading-relaxed text-ink/70">
           <strong className="font-bold text-ink/75">Seguimiento semanal:</strong> 0–2 decisiones
           alineadas (nivel bajo) · 3–4 (proceso en construcción) · 5 o más (alta consistencia).
         </p>

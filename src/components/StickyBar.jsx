@@ -51,7 +51,7 @@ export default function StickyBar() {
         </div>
         <p className="display text-2xl text-white sm:text-2xl">
           {site.price.display}
-          <span className="ml-1.5 text-xs text-red">{site.price.currencyLabel}</span>
+          <span className="ml-1.5 text-xs text-red-bright">{site.price.currencyLabel}</span>
         </p>
         <CtaButton location="barra-fija" size="sm" label={site.ctaShort} className="flex-1 sm:flex-none" />
       </div>

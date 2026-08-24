@@ -28,7 +28,6 @@ function Item({ q, a, open, onToggle, id }) {
       </h3>
       <div
         id={panelId}
-        role="region"
         aria-labelledby={buttonId}
         className="grid transition-all duration-300 ease-out"
         style={{ gridTemplateRows: open ? '1fr' : '0fr' }}

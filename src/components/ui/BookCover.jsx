@@ -38,7 +38,7 @@ export default function BookCover({ className = '', floating = true }) {
           </div>
 
           <div className="relative">
-            <p className="mb-[9%] max-w-[92%] text-[clamp(0.5rem,1.4vw,0.7rem)] italic leading-relaxed text-white/45">
+            <p className="mb-[9%] max-w-[92%] text-[clamp(0.5rem,1.4vw,0.7rem)] italic leading-relaxed text-white/60">
               Motivación, disciplina y constancia para transformar tu cuerpo y tu mente.
             </p>
             <div className="h-px w-full bg-white/15" />

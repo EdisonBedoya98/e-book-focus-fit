@@ -40,7 +40,7 @@ export default function Exercises() {
                 as="li"
                 key={e.n}
                 delay={i * 60}
-                className="group flex gap-5 bg-ink px-6 py-5 transition-colors hover:bg-ink-2"
+                className="group flex gap-5 bg-ink px-6 py-5 hover:bg-ink-2"
               >
                 <span className="display shrink-0 pt-0.5 text-lg text-red-bright">{e.n}</span>
                 <div>
@@ -52,7 +52,7 @@ export default function Exercises() {
           </ol>
 
           <Reveal className="mt-8 border border-white/10 bg-ink-2 p-7">
-            <h3 className="eyebrow mb-5 text-white/45">Además, herramientas y tablas</h3>
+            <h3 className="eyebrow mb-5 text-white/55">Además, herramientas y tablas</h3>
             <ul className="grid gap-2.5 sm:grid-cols-2">
               {tools.map((t) => (
                 <li key={t} className="flex gap-2.5 text-[13px] leading-snug text-white/75">

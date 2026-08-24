@@ -45,7 +45,7 @@ export default function FinalCta() {
 
         <div className="mt-12 flex flex-col items-center gap-6">
           <CtaButton location="cierre" size="lg" className="w-full sm:w-auto" />
-          <ul className="flex flex-wrap justify-center gap-x-5 gap-y-2 text-[11px] font-semibold uppercase tracking-[0.14em] text-white/40">
+          <ul className="flex flex-wrap justify-center gap-x-5 gap-y-2 text-[11px] font-semibold uppercase tracking-[0.14em] text-white/60">
             {trustPoints.map((t) => (
               <li key={t}>{t}</li>
             ))}

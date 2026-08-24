@@ -42,12 +42,12 @@ export default function WhatIsIt() {
 
           <div className="mt-10 grid gap-px bg-white/10 sm:grid-cols-2">
             <div className="bg-ink-3 p-7">
-              <h3 className="eyebrow mb-5 flex items-center gap-2 text-white/45">
+              <h3 className="eyebrow mb-5 flex items-center gap-2 text-white/55">
                 <X size={16} strokeWidth={3} /> Aquí no vas a encontrar
               </h3>
               <ul className="space-y-3.5">
                 {NO.map((t) => (
-                  <li key={t} className="flex gap-3 text-sm leading-snug text-white/45">
+                  <li key={t} className="flex gap-3 text-sm leading-snug text-white/55">
                     <X size={16} strokeWidth={2.5} className="mt-0.5 shrink-0" />
                     {t}
                   </li>
@@ -56,7 +56,7 @@ export default function WhatIsIt() {
             </div>
 
             <div className="bg-ink-3 p-7 ring-1 ring-red/40">
-              <h3 className="eyebrow mb-5 flex items-center gap-2 text-red">
+              <h3 className="eyebrow mb-5 flex items-center gap-2 text-red-bright">
                 <Check size={16} strokeWidth={3} /> Sí vas a encontrar
               </h3>
               <ul className="space-y-3.5">

@@ -41,7 +41,7 @@ export default function ForYou() {
           </h3>
           <ul className="space-y-4">
             {notForYou.map((t) => (
-              <li key={t} className="flex gap-4 text-sm leading-relaxed text-white/45 md:text-[15px]">
+              <li key={t} className="flex gap-4 text-sm leading-relaxed text-white/55 md:text-[15px]">
                 <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full border border-white/20">
                   <X size={11} strokeWidth={3} className="text-white/50" />
                 </span>

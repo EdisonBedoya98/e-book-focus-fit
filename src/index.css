@@ -116,7 +116,11 @@
   @media (width >= 768px) { padding-inline: 2rem; }
 }
 
-/* Aparición al hacer scroll */
+/* Aparición al hacer scroll.
+   Ojo: esta regla vive fuera de @layer, así que su `transition` gana a las
+   utilidades de Tailwind (`transition-colors`) en el mismo elemento. Por eso
+   enumeramos también color/fondo/borde: si no, los `hover:bg-*` de las tarjetas
+   que son <Reveal> cambiarían de golpe. No añadas `transition-colors` a un Reveal. */
 .reveal {
   opacity: 0;
   transform: translateY(28px);

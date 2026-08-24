@@ -24,7 +24,7 @@ export default function Learnings() {
             as="li"
             key={l.title}
             delay={(i % 3) * 90}
-            className="group relative bg-ink p-8 transition-colors duration-300 hover:bg-ink-2"
+            className="group relative bg-ink p-8 hover:bg-ink-2"
           >
             <div className="flex h-14 w-14 items-center justify-center rounded-full border border-red/30 bg-red/10 transition-all duration-300 group-hover:bg-red">
               <Icon name={l.icon} size={26} strokeWidth={1.5} className="text-red transition-colors group-hover:text-white" />

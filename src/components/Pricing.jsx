@@ -67,7 +67,7 @@ export default function Pricing() {
 
           <div className="mt-4 text-center">
             {site.price.compareAt && (
-              <p className="text-lg text-white/35 line-through">{site.price.compareAt}</p>
+              <p className="text-lg text-white/55 line-through">{site.price.compareAt}</p>
             )}
             <p className="display text-6xl leading-none text-white md:text-7xl">
               {site.price.display}
@@ -99,7 +99,7 @@ export default function Pricing() {
 
           <div className="mt-7 flex gap-3 border-t border-white/10 pt-6">
             <ShieldCheck size={26} strokeWidth={1.5} className="shrink-0 text-red" />
-            <p className="text-[12px] leading-relaxed text-mute">
+            <p className="text-[13px] leading-relaxed text-white/70">
               <strong className="font-bold uppercase tracking-wide text-white">
                 Garantía de {site.guaranteeDays} días.
               </strong>{' '}
