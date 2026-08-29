@@ -71,7 +71,7 @@ export default function Pricing() {
             )}
             <p className="display text-6xl leading-none text-white md:text-7xl">
               {site.price.display}
-              <span className="ml-2 align-super text-xl text-red md:text-2xl">
+              <span className="ml-2 align-super text-xl text-red-bright md:text-2xl">
                 {site.price.currencyLabel}
               </span>
             </p>

@@ -61,26 +61,30 @@ export const WHATSAPP = ''             // ej: '573001234567' → aparece el bloq
 | --- | --- |
 | Precio, garantía, correo, Instagram, texto de los botones | `src/config/site.js` |
 | Todos los textos de las secciones (dolores, capítulos, ejercicios, FAQ…) | `src/data/content.js` |
-| Foto de Cata | reemplaza `src/assets/cata.png` |
+| Foto de Cata | reemplaza `src/assets/cata.jpg` (cuadrada, se recorta en círculo) |
+| Portada del e-book | reemplaza `src/assets/portada-focus-fit.jpg` (vertical, 2:3) |
 | Testimonios (opcional) | `src/data/content.js` → `testimonials` |
 | Título y descripción en Google / redes | `index.html` |
 | Ejemplo de tabla de ejercicio | `src/components/ui/ExerciseSheet.jsx` |
-| Imagen que se ve al compartir el link | `public/og-image.png` (1200×630) |
+| Imagen que se ve al compartir el link | `public/og-image.jpg` (1200×630) |
 
 **Cambiar el precio:** en `src/config/site.js`
 
 ```js
 price: {
-  amount: 49000,
-  display: '$49.000',
-  currencyLabel: 'COP',
+  amount: 10,
+  display: '$10',
+  currencyLabel: 'USD',
   compareAt: null,   // pon '$79.000' si quieres mostrar un precio tachado
 },
 ```
 
-> ⚠️ **Importante:** la foto de `src/assets/cata.png` es provisional (salió de la propuesta de
-> diseño y es de baja resolución). Reemplázala por una foto tuya real antes de publicar,
-> manteniendo el mismo nombre de archivo.
+> 📷 **Sobre las imágenes:** `src/assets/cata.jpg` es un recorte cuadrado (700×700) de la foto
+> original, que se conserva completa en `src/assets/cata-original.jpg` por si quieres reencuadrarla.
+> Ese recorte deja fuera la marca de agua del fotógrafo; si necesitas conservarle el crédito,
+> añádelo en el pie de página. La portada `src/assets/portada-focus-fit.jpg` se usa en tres
+> sitios (hero, «Esto es Focus & Fit» y bloque de precio): cambiando ese archivo se actualizan
+> los tres.
 
 ---
 
@@ -135,9 +139,20 @@ npx vercel
 **Opción manual:** ejecuta `npm run build` y sube el contenido de la carpeta `dist/`
 a Netlify, Hostinger, Cloudflare Pages o el hosting que uses.
 
-**Antes de publicar**, cambia `focusandfit.com` por tu dominio real en las tres etiquetas
-marcadas en `index.html` (`canonical`, `og:url` y `og:image`). Si no lo haces, al compartir el
-link en WhatsApp o Instagram no se verá la imagen de portada.
+### ⚠️ Antes de publicar: cambia el dominio
+
+Busca y reemplaza `focusandfit.com` por tu dominio real en **dos archivos**:
+
+- `index.html` → `canonical`, `og:url`, `og:image`, `og:image:secure_url`, `twitter:image`
+  y el bloque de datos estructurados (`url`, `image`, `offers.url`).
+- `public/robots.txt` y `public/sitemap.xml` → la línea del sitemap y el `<loc>`.
+
+Si no lo haces, al compartir el link en WhatsApp o Instagram **no se verá la imagen de portada**,
+porque Open Graph exige URLs absolutas.
+
+Para comprobar cómo se verá la tarjeta una vez publicada:
+[Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/) ·
+[X Card Validator](https://cards-dev.twitter.com/validator)
 
 ---
 

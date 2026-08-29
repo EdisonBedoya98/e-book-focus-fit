@@ -6,7 +6,7 @@ import BookCover from './ui/BookCover'
 const NO = [
   'Un método mágico',
   'Promesas de transformación en 21 días',
-  'Frases para sentirte culpable en un mal día',
+  'Un manual motivacional',
   'Una rutina de entrenamiento o una dieta',
 ]
 
@@ -22,7 +22,7 @@ export default function WhatIsIt() {
     <Section id="el-ebook" className="bg-ink-2">
       <div className="grid items-center gap-14 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
         <Reveal className="relative order-2 mx-auto w-full max-w-[280px] lg:order-1 lg:max-w-none">
-          <div className="pointer-events-none absolute -inset-8 -z-10 rounded-full bg-red/15 blur-[80px]" />
+          <div className="pointer-events-none absolute -inset-4 -z-10 rounded-full bg-red/15 blur-[80px] sm:-inset-8" />
           <BookCover floating={false} />
         </Reveal>
 

@@ -40,10 +40,10 @@ export const site = {
     instagram: 'https://www.instagram.com/cata.psicofit/',
   },
   price: {
-    amount: 49000,
-    currency: 'COP',
-    display: '$49.000',
-    currencyLabel: 'COP',
+    amount: 10,
+    currency: 'USD',
+    display: '$10',
+    currencyLabel: 'USD',
     /**
      * Precio tachado opcional para anclar el valor (ej: '$79.000').
      * Úsalo SOLO si el producto realmente tuvo ese precio antes.

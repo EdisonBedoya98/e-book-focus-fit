@@ -3,7 +3,7 @@ import { goToCheckout } from '../../lib/checkout'
 import { site } from '../../config/site'
 
 const SIZES = {
-  sm: 'px-5 py-3 text-[11px] tracking-[0.16em]',
+  sm: 'min-h-11 px-5 py-3 text-[11px] tracking-[0.16em]',
   md: 'px-7 py-4 text-xs tracking-[0.18em] md:text-[13px]',
   lg: 'px-8 py-5 text-sm tracking-[0.18em] md:px-10 md:text-base',
 }

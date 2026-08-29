@@ -9,7 +9,7 @@ export default function Exercises() {
   return (
     <Section className="relative bg-ink">
       <div className="grid gap-14 lg:grid-cols-[1fr_1fr] lg:gap-16">
-        <div>
+        <div className="min-w-0">
           <p className="eyebrow mb-4 text-red-bright">
             <span className="mr-3 inline-block h-px w-8 translate-y-[-4px] bg-red align-middle" />
             Ejercicios prácticos
@@ -33,7 +33,7 @@ export default function Exercises() {
           </div>
         </div>
 
-        <div>
+        <div className="min-w-0">
           <ol className="grid gap-px bg-white/10">
             {exercises.map((e, i) => (
               <Reveal
@@ -43,7 +43,7 @@ export default function Exercises() {
                 className="group flex gap-5 bg-ink px-6 py-5 hover:bg-ink-2"
               >
                 <span className="display shrink-0 pt-0.5 text-lg text-red-bright">{e.n}</span>
-                <div>
+                <div className="min-w-0">
                   <h3 className="text-sm font-bold leading-snug text-white md:text-[15px]">{e.title}</h3>
                   <p className="mt-1.5 text-[13px] leading-relaxed text-mute">{e.text}</p>
                 </div>

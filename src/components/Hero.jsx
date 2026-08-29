@@ -37,27 +37,25 @@ export default function Hero() {
           </p>
 
           <h1 className="display text-[2.75rem] leading-[0.9] text-white sm:text-6xl lg:text-[4.75rem]">
-            No es falta
+            Aprende a sostener
             <br />
-            de disciplina.
+            <span className="text-red">lo que quieres</span>
             <br />
-            <span className="text-red">Es falta de</span>
-            <br />
-            <span className="text-red">comprensión.</span>
+            <span className="text-red">construir.</span>
           </h1>
 
           <p className="mt-7 max-w-xl text-base leading-relaxed text-white/70 md:text-lg">
             Una guía de <strong className="font-semibold text-white">psicología aplicada al Fitness</strong> para
-            entender tu mente, fortalecer tu motivación y construir hábitos que puedas sostener
-            más allá de un momento de entusiasmo.
+            entender tu mente, fortalecer tu motivación, afianzar tu disciplina y construir hábitos
+            que puedas sostener más allá de un momento de entusiasmo.
           </p>
 
           {/* micro-beneficios */}
-          <ul className="mt-10 grid grid-cols-3 gap-4 border-y border-white/10 py-6 sm:gap-6">
+          <ul className="mt-10 grid gap-4 border-y border-white/10 py-6 sm:grid-cols-3 sm:gap-6">
             {BADGES.map(({ icon: I, label }) => (
-              <li key={label} className="flex flex-col items-start gap-3">
-                <I size={26} strokeWidth={1.5} className="text-red" />
-                <span className="whitespace-pre-line text-[10px] font-bold uppercase leading-tight tracking-[0.12em] text-white/65 sm:text-[11px]">
+              <li key={label} className="flex items-center gap-3 sm:flex-col sm:items-start">
+                <I size={26} strokeWidth={1.5} className="shrink-0 text-red" />
+                <span className="text-[11px] font-bold uppercase leading-tight tracking-[0.12em] text-white/65 sm:whitespace-pre-line">
                   {label}
                 </span>
               </li>
@@ -90,7 +88,7 @@ export default function Hero() {
         {/* portada */}
         <div className="relative mx-auto w-full max-w-[300px] sm:max-w-[340px] lg:max-w-none">
           <div className="pointer-events-none absolute -inset-10 -z-10 rounded-full bg-red/20 blur-[90px]" />
-          <BookCover />
+          <BookCover alt="Portada del e-book Focus &amp; Fit: comprende tu mente, transforma tus hábitos" />
           <div className="mt-10 flex justify-center">
             <p className="border border-white/10 bg-white/5 px-4 py-2 text-[10px] font-bold uppercase tracking-[0.22em] text-white/50 backdrop-blur">
               220 páginas · 7 ejercicios prácticos

@@ -49,8 +49,8 @@ export const learnings = [
   },
   {
     icon: 'Target',
-    title: 'Desarrollar disciplina consciente',
-    text: 'Comprende la relación entre gratificación inmediata y diferida, autocontrol y toma de decisiones.',
+    title: 'Desarrollar disciplina',
+    text: 'Comprende la relación entre gratificación inmediata y diferida, autodominio y toma de decisiones.',
   },
   {
     icon: 'Mountain',
@@ -65,12 +65,12 @@ export const learnings = [
   {
     icon: 'CalendarCheck',
     title: 'Construir constancia',
-    text: 'Aprende a regresar, ajustar y continuar, incluso cuando es más fácil rendirse.',
+    text: 'Aprende a aplicar, ajustar y continuar, incluso cuando es más fácil rendirse.',
   },
   {
     icon: 'Heart',
     title: 'Fortalecer tu relación contigo',
-    text: 'Desarrolla compasión, autoconocimiento y estrategias para sostenerte a largo plazo.',
+    text: 'Mejora tu autodiálogo, trabaja en tu autoconocimiento y desarrolla estrategias para sostenerte a largo plazo.',
   },
 ]
 
@@ -166,7 +166,7 @@ export const forYou = [
   'Te gusta el Fitness, pero quieres una relación más consciente con él.',
   'Sabes lo que deberías hacer, pero te cuesta sostenerlo.',
   'Has empezado muchas veces y siempre vuelves al mismo punto.',
-  'Tu motivación cambia constantemente y no quieres depender solo de ella.',
+  'No quieres que el logro de tus metas siga dependiendo de tu estado de ánimo.',
   'Te cuesta ser constante.',
   'El perfeccionismo, la procrastinación o el miedo al fracaso interfieren con tus objetivos.',
   'Quieres comprender tu comportamiento en lugar de exigirte más.',
@@ -206,10 +206,6 @@ export const faqs = [
     a: 'No. Focus & Fit es un material psicoeducativo y de reflexión. No reemplaza la evaluación, el diagnóstico ni la intervención individual realizada por un profesional de la salud mental.',
   },
   {
-    q: '¿Es solo para personas que entrenan?',
-    a: 'No necesariamente. Aunque está construido desde la relación entre psicología y Fitness, las herramientas también te ayudan a reflexionar sobre otros hábitos y áreas de tu vida.',
-  },
-  {
     q: '¿Voy a recibir una rutina de entrenamiento o una dieta?',
     a: 'No. Este no es un programa de entrenamiento ni un plan nutricional. El enfoque está en la motivación, la disciplina, la constancia, el cambio de comportamiento y las barreras psicológicas.',
   },
@@ -244,5 +240,4 @@ export const faqs = [
 ]
 
 /** Frase manuscrita de cierre */
-export const handwrittenQuote =
-  'No se trata de ser perfecto/a, se trata de ser consciente y no abandonarte en el camino.'
+export const handwrittenQuote = 'Entrenar más allá del cuerpo.'

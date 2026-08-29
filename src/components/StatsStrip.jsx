@@ -17,7 +17,7 @@ export default function StatsStrip() {
             <I size={30} strokeWidth={1.4} className="shrink-0 text-red" />
             <div>
               <p className="display text-2xl text-white md:text-3xl">{value}</p>
-              <p className="mt-1 text-[10px] font-semibold uppercase leading-tight tracking-[0.12em] text-mute">
+              <p className="mt-1 text-[11px] font-semibold uppercase leading-tight tracking-[0.12em] text-mute sm:text-[10px]">
                 {label}
               </p>
             </div>

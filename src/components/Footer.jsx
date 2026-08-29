@@ -24,14 +24,14 @@ export default function Footer() {
 
         <div className="text-[12px] text-mute-2">
           <p className="mb-4 text-[10px] font-bold uppercase tracking-[0.2em] text-white/50">Contacto</p>
-          <a href={`mailto:${site.email}`} className="block text-white/80 transition-colors hover:text-red-bright">
+          <a href={`mailto:${site.email}`} className="flex min-h-11 items-center text-white/80 transition-colors hover:text-red-bright">
             {site.email}
           </a>
           <a
             href={site.author.instagram}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-2 block text-white/80 transition-colors hover:text-red-bright"
+            className="flex min-h-11 items-center text-white/80 transition-colors hover:text-red-bright"
           >
             {handle}
           </a>

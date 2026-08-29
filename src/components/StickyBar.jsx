@@ -42,14 +42,14 @@ export default function StickyBar() {
         show ? 'translate-y-0' : 'translate-y-full pointer-events-none'
       }`}
     >
-      <div className="shell flex items-center justify-between gap-4 py-3.5">
+      <div className="shell flex items-center justify-between gap-2 py-3.5 sm:gap-4">
         <div className="hidden sm:block">
           <p className="text-[13px] font-bold uppercase tracking-wide text-white">
             Focus <span className="text-red">&amp;</span> Fit
           </p>
           <p className="text-[11px] text-mute">Acceso inmediato · PDF</p>
         </div>
-        <p className="display text-2xl text-white sm:text-2xl">
+        <p className="display shrink-0 text-xl text-white sm:text-2xl">
           {site.price.display}
           <span className="ml-1.5 text-xs text-red-bright">{site.price.currencyLabel}</span>
         </p>

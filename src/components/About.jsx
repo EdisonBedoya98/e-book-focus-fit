@@ -3,7 +3,7 @@ import Section from './ui/Section'
 import Reveal from './ui/Reveal'
 import { handwrittenQuote } from '../data/content'
 import { site } from '../config/site'
-import cata from '../assets/cata.png'
+import cata from '../assets/cata.jpg'
 
 export default function About() {
   return (
@@ -14,8 +14,8 @@ export default function About() {
           <img
             src={cata}
             alt="Cata, psicóloga y entrenadora, autora de Focus & Fit"
-            width={512}
-            height={512}
+            width={700}
+            height={700}
             className="aspect-square w-full rounded-full object-cover ring-2 ring-red/40"
             loading="lazy"
           />
@@ -35,8 +35,9 @@ export default function About() {
 
           <div className="mt-7 space-y-4 text-sm leading-relaxed text-mute md:text-[15px]">
             <p>
-              Psicóloga, entrenadora y una persona profundamente interesada en comprender la
-              relación entre la mente, el comportamiento y el Fitness.
+              Dedico mi quehacer profesional a comprender la relación entre la mente, el
+              comportamiento y el Fitness. Me encanta el gym, el mundo del bienestar y el
+              crecimiento personal.
             </p>
             <p>
               Pero este proyecto no nació únicamente desde la teoría. Mi propia historia con el
@@ -44,13 +45,14 @@ export default function About() {
               relación difícil conmigo misma.
             </p>
             <p>
-              Con el tiempo entendí que transformar un cuerpo sin revisar la relación que tenemos
+              Con el tiempo entendí que transformar un cuerpo sin analizar la relación que tenemos
               con nuestra mente puede convertirse en otra forma de conflicto.
             </p>
             <p className="text-white/85">
               <strong className="font-semibold text-white">Focus &amp; Fit</strong> nace del encuentro
               entre la psicología y el Fitness, con un propósito: ayudarte a comprenderte mejor para
-              que construyas una relación más sana, consciente y sostenible contigo mismo/a.
+              que construyas una relación más sana, consciente y sostenible contigo mismo/a, con el
+              ejercicio y la alimentación.
             </p>
           </div>
         </div>

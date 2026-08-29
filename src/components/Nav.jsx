@@ -53,11 +53,11 @@ export default function Nav() {
       }`}
     >
       <nav className="shell flex h-18 items-center justify-between py-4" aria-label="Principal">
-        <a href="#inicio" className="group flex flex-col leading-none">
+        <a href="#inicio" className="group flex min-h-11 flex-col justify-center leading-none">
           <span className="display text-xl tracking-wide text-white md:text-2xl">
             Focus <span className="text-red">&amp;</span> Fit
           </span>
-          <span className="mt-1 text-[9px] font-semibold uppercase tracking-[0.3em] text-mute-2">
+          <span className="mt-1 text-[9px] font-semibold uppercase tracking-[0.16em] text-mute-2 sm:tracking-[0.3em]">
             {site.tagline}
           </span>
         </a>

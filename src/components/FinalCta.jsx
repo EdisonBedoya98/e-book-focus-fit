@@ -14,11 +14,9 @@ export default function FinalCta() {
         <p className="eyebrow mb-6 text-red-bright">El cierre</p>
 
         <h2 className="display text-4xl leading-[0.95] text-white sm:text-5xl md:text-6xl">
-          Tu siguiente paso
+          El siguiente paso
           <br />
-          no tiene que ser perfecto.
-          <br />
-          <span className="text-red">Solo tiene que ser consciente.</span>
+          <span className="text-red">está aquí y ahora.</span>
         </h2>
 
         <div className="mx-auto mt-9 max-w-2xl space-y-4 text-base leading-relaxed text-mute md:text-lg">
@@ -28,7 +26,7 @@ export default function FinalCta() {
           </p>
           <p className="text-white/85">
             Focus &amp; Fit no es una promesa de que nunca volverás a perder la motivación. Es una
-            invitación a desarrollar herramientas para no depender únicamente de ella.
+            invitación a comprender tu mente para que aprendas a sostener lo que quieres construir.
           </p>
         </div>
 
@@ -36,7 +34,7 @@ export default function FinalCta() {
           {STEPS.map((s, i) => (
             <li key={s} className="bg-ink px-2 py-5">
               <span className="display block text-lg text-red">{`0${i + 1}`}</span>
-              <span className="mt-1 block text-[10px] font-bold uppercase tracking-[0.16em] text-white/65">
+              <span className="mt-1 block text-[11px] font-bold uppercase tracking-[0.16em] text-white/65 sm:text-[10px]">
                 {s}
               </span>
             </li>
@@ -53,7 +51,7 @@ export default function FinalCta() {
         </div>
 
         <p className="font-hand mt-12 text-2xl text-white/70 md:text-3xl">
-          Este e-book es el mapa. Ahora te toca caminar. Nos vemos dentro ♡
+          Este e-book es el mapa. Ahora te toca recorrer el camino. Nos vemos dentro.
         </p>
       </Reveal>
     </Section>
