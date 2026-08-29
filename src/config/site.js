@@ -54,7 +54,7 @@ export const site = {
   /** Texto del botón principal, reutilizado en toda la página. */
   cta: 'QUIERO MI COPIA DE FOCUS & FIT',
   ctaShort: 'QUIERO MI COPIA',
-  email: 'hola@focusandfit.com',
+  email: 'cata.psicofit@gmail.com',
 }
 
 export const trustPoints = [
